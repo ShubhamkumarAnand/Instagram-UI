@@ -5,24 +5,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Instagram with Tailwind CSS</title>
+        <link
+            rel="shortcut icon"
+            href="assets/Instagram.ico"
+            type="image/x-icon"
+        />
         <link href="../dist/output.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="sticky top-0 border-b shadow-sm bg-white z-30">
+        <div class="sticky top-0 z-30 bg-white border-b shadow-sm">
             <!-- Header -->
 
             <div
-                class="flex justify-between h-24 items-center mx-4 xl:max-w-6xl xl:mx-auto"
+                class="flex items-center justify-between h-24 mx-4 xl:max-w-6xl xl:mx-auto"
             >
                 <!-- Left  -->
 
-                <div class="cursor-pointer w-24 hidden lg:inline-grid">
+                <div class="hidden w-24 cursor-pointer lg:inline-grid">
                     <img
                         src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo.png"
                         alt="instagram-logo"
                     />
                 </div>
-                <div class="cursor-pointer w-10 lg:hidden">
+                <div class="w-10 cursor-pointer lg:hidden">
                     <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
                         alt="instagram-logo"
@@ -35,7 +40,7 @@
                     <div class="absolute top-2 left-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 text-gray-500"
+                            class="w-5 h-5 text-gray-500"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -50,16 +55,16 @@
                     </div>
                     <input
                         placeholder="Search"
-                        class="pl-10 rounded-md focus:ring-black focus:border-black bg-gray-50 border-gray-500 text-sm"
+                        class="pl-10 text-sm border-gray-500 rounded-md focus:ring-black focus:border-black bg-gray-50"
                         type="text"
                     />
                 </div>
 
                 <!-- Right -->
-                <div class="flex space-x-4 items-center">
+                <div class="flex items-center space-x-4">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out hidden md:inline-flex"
+                        class="hidden w-6 h-6 transition-transform duration-200 ease-out cursor-pointer hover:scale-125 md:inline-flex"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                     >
@@ -69,7 +74,7 @@
                     </svg>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out"
+                        class="w-6 h-6 transition-transform duration-200 ease-out cursor-pointer hover:scale-125"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -93,16 +98,16 @@
 
         <!-- Feed -->
 
-        <main class="grid grid-cols-1 md:grid-cols-3 mx-auto md:max-w-6xl">
+        <main class="grid grid-cols-1 mx-auto md:grid-cols-3 md:max-w-6xl">
             <section class="md:col-span-2">
                 <!-- Left -->
 
                 <!-- Stories -->
 
                 <div
-                    class="flex space-x-2 p-6 border overflow-x-scroll scrollbar-none rounded-sm"
+                    class="flex p-6 space-x-2 overflow-x-scroll border rounded-sm scrollbar-none"
                 >
-                    <div class="cursor-pointer relative group">
+                    <div class="relative cursor-pointer group">
                         <img
                             src="assets/imskanad.png"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 group-hover:scale-110 transition-transform duration-200 ease-out"
@@ -110,7 +115,7 @@
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 absolute top-4 left-4 text-white"
+                            class="absolute w-6 h-6 text-white top-4 left-4"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -123,7 +128,7 @@
                             />
                         </svg>
 
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             imskanand
                         </p>
                     </div>
@@ -132,7 +137,7 @@
                             src="https://i.pravatar.cc/150?img=1"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Amorepead1944
                         </p>
                     </div>
@@ -141,14 +146,14 @@
                             src="https://i.pravatar.cc/150?img=2"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">Berman</p>
+                        <p class="text-xs text-center truncate w-14">Berman</p>
                     </div>
                     <div class="cursor-pointer">
                         <img
                             src="https://i.pravatar.cc/150?img=3"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Wevell36
                         </p>
                     </div>
@@ -157,7 +162,7 @@
                             src="https://i.pravatar.cc/150?img=4"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Wough1971
                         </p>
                     </div>
@@ -166,7 +171,7 @@
                             src="https://i.pravatar.cc/150?img=5"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Ovion1943
                         </p>
                     </div>
@@ -175,7 +180,7 @@
                             src="https://i.pravatar.cc/150?img=6"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Unessight
                         </p>
                     </div>
@@ -184,7 +189,7 @@
                             src="https://i.pravatar.cc/150?img=7"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Nowassained
                         </p>
                     </div>
@@ -193,7 +198,7 @@
                             src="https://i.pravatar.cc/150?img=8"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Freg1969
                         </p>
                     </div>
@@ -202,7 +207,7 @@
                             src="https://i.pravatar.cc/150?img=9"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Ushe1969
                         </p>
                     </div>
@@ -211,7 +216,7 @@
                             src="https://i.pravatar.cc/150?img=10"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Onstonly1976
                         </p>
                     </div>
@@ -220,7 +225,7 @@
                             src="https://i.pravatar.cc/150?img=11"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Cleakettent
                         </p>
                     </div>
@@ -229,7 +234,7 @@
                             src="https://i.pravatar.cc/150?img=12"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Foldishow
                         </p>
                     </div>
@@ -238,7 +243,7 @@
                             src="https://i.pravatar.cc/150?img=13"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Pith2000
                         </p>
                     </div>
@@ -247,25 +252,25 @@
                             src="https://i.pravatar.cc/150?img=14"
                             class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"
                         />
-                        <p class="text-xs w-14 truncate text-center">
+                        <p class="text-xs text-center truncate w-14">
                             Amorepead1944
                         </p>
                     </div>
                 </div>
 
                 <!-- Posts -->
-                <div class="border my-7 bg-white rounded-md">
+                <div class="bg-white border rounded-md my-7">
                     <!-- Post Header -->
                     <div class="flex items-center p-5">
                         <img
-                            class="h-12 rounded-full border p-1 mr-3"
+                            class="h-12 p-1 mr-3 border rounded-full"
                             src="assets/imskanad.png"
                             alt="user-image"
                         />
                         <p class="flex-1 font-bold">imskanand</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
+                            class="w-6 h-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -282,7 +287,7 @@
                     <!-- Post Image -->
 
                     <img
-                        class="w-full object-cover"
+                        class="object-cover w-full"
                         src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
                         alt=""
                     />
@@ -321,7 +326,7 @@
                             </svg>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="btn rotate-45 h-6"
+                                class="h-6 rotate-45 btn"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -355,18 +360,18 @@
                     <!-- Caption -->
 
                     <p class="p-5 truncate">
-                        <span class="font-bold mr-2">imskanand</span>
+                        <span class="mr-2 font-bold">imskanand</span>
                         nice picture!
                     </p>
 
                     <!-- comments -->
 
                     <div
-                        class="mx-10 max-h-24 overflow-y-scroll scrollbar-none"
+                        class="mx-10 overflow-y-scroll max-h-24 scrollbar-none"
                     >
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=1"
                                 alt="user-image"
                             />
@@ -374,9 +379,9 @@
                             <p class="flex-1 truncate">nice</p>
                             <p>2 hours ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=2"
                                 alt="user-image"
                             />
@@ -384,9 +389,9 @@
                             <p class="flex-1 truncate">amazing!</p>
                             <p>5 hours ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=3"
                                 alt="user-image"
                             />
@@ -394,9 +399,9 @@
                             <p class="flex-1 truncate">great!</p>
                             <p>2 days ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=4"
                                 alt="user-image"
                             />
@@ -425,25 +430,25 @@
                         </svg>
 
                         <input
-                            class="border-none flex-1 focus:ring-0"
+                            class="flex-1 border-none focus:ring-0"
                             type="text"
                             placeholder="Enter your comment"
                         />
                         <button class="font-bold text-blue-400">Post</button>
                     </form>
                 </div>
-                <div class="border my-7 bg-white rounded-md">
+                <div class="bg-white border rounded-md my-7">
                     <!-- Post Header -->
                     <div class="flex items-center p-5">
                         <img
-                            class="h-12 rounded-full border p-1 mr-3"
+                            class="h-12 p-1 mr-3 border rounded-full"
                             src="assets/imskanad.png"
                             alt="user-image"
                         />
                         <p class="flex-1 font-bold">imskanand</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
+                            class="w-6 h-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -460,7 +465,7 @@
                     <!-- Post Image -->
 
                     <img
-                        class="w-full object-cover"
+                        class="object-cover w-full"
                         src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
                         alt=""
                     />
@@ -499,7 +504,7 @@
                             </svg>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="btn rotate-45 h-6"
+                                class="h-6 rotate-45 btn"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -535,18 +540,18 @@
                     <p class="p-5 truncate">
                         <span class="font-bold">2 likes</span>
                         <br />
-                        <span class="font-bold mr-2">imskanand</span>
+                        <span class="mr-2 font-bold">imskanand</span>
                         nice picture!
                     </p>
 
                     <!-- comments -->
 
                     <div
-                        class="mx-10 max-h-24 overflow-y-scroll scrollbar-none"
+                        class="mx-10 overflow-y-scroll max-h-24 scrollbar-none"
                     >
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=1"
                                 alt="user-image"
                             />
@@ -554,9 +559,9 @@
                             <p class="flex-1 truncate">nice</p>
                             <p>2 hours ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=2"
                                 alt="user-image"
                             />
@@ -564,9 +569,9 @@
                             <p class="flex-1 truncate">amazing!</p>
                             <p>5 hours ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=3"
                                 alt="user-image"
                             />
@@ -574,9 +579,9 @@
                             <p class="flex-1 truncate">great!</p>
                             <p>2 days ago</p>
                         </div>
-                        <div class="flex items-center space-x-2 mb-2">
+                        <div class="flex items-center mb-2 space-x-2">
                             <img
-                                class="h-7 rounded-full object-cover"
+                                class="object-cover rounded-full h-7"
                                 src="https://i.pravatar.cc/150?img=4"
                                 alt="user-image"
                             />
@@ -605,7 +610,7 @@
                         </svg>
 
                         <input
-                            class="border-none flex-1 focus:ring-0"
+                            class="flex-1 border-none focus:ring-0"
                             type="text"
                             placeholder="Enter your comment"
                         />
@@ -618,7 +623,7 @@
                 <!-- Right -->
                 <div class="fixed w-[380px]">
                     <!-- Mini Profile -->
-                    <div class="flex items-center justify-between mt-14 ml-10">
+                    <div class="flex items-center justify-between ml-10 mt-14">
                         <img
                             src="assets/imskanad.png"
                             alt="user-image"
@@ -630,7 +635,7 @@
                                 Welcome to instagram
                             </h3>
                         </div>
-                        <button class="font-semibold text-blue-400 text-sm">
+                        <button class="text-sm font-semibold text-blue-400">
                             Sign out
                         </button>
                     </div>
@@ -642,7 +647,7 @@
                             <h3 class="font-bold text-gray-400">
                                 Suggestions for you
                             </h3>
-                            <button class="text-gray-600 font-semibold">
+                            <button class="font-semibold text-gray-600">
                                 See all
                             </button>
                         </div>
@@ -653,10 +658,10 @@
                                 alt="user-image"
                             />
                             <div class="flex-1 ml-4">
-                                <h2 class="font-semibold text-sm">john26375</h2>
+                                <h2 class="text-sm font-semibold">john26375</h2>
                                 <h3 class="text-sm text-gray-400">Manager</h3>
                             </div>
-                            <button class="font-semibold text-blue-400 text-sm">
+                            <button class="text-sm font-semibold text-blue-400">
                                 Follow
                             </button>
                         </div>
@@ -667,12 +672,12 @@
                                 alt="user-image"
                             />
                             <div class="flex-1 ml-4">
-                                <h2 class="font-semibold text-sm">
+                                <h2 class="text-sm font-semibold">
                                     davidlkdnc75
                                 </h2>
                                 <h3 class="text-sm text-gray-400">Manager</h3>
                             </div>
-                            <button class="font-semibold text-blue-400 text-sm">
+                            <button class="text-sm font-semibold text-blue-400">
                                 Follow
                             </button>
                         </div>
@@ -683,12 +688,12 @@
                                 alt="user-image"
                             />
                             <div class="flex-1 ml-4">
-                                <h2 class="font-semibold text-sm">
+                                <h2 class="text-sm font-semibold">
                                     sarasjhgcvsvc
                                 </h2>
                                 <h3 class="text-sm text-gray-400">Engineer</h3>
                             </div>
-                            <button class="font-semibold text-blue-400 text-sm">
+                            <button class="text-sm font-semibold text-blue-400">
                                 Follow
                             </button>
                         </div>
